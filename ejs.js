@@ -3,6 +3,7 @@ var ejs  = require("ejs");
 var qs = require("querystring");
 var fs   = require("fs");
 var config = require("./config");
+var math  = require("math")
 var server = http.createServer();
 
 var msg;
