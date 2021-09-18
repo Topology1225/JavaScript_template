@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>簡易掲示板</title>
+</head>
+<body>
+
+<form action="/" method="post">
+  <input type="text" name="user_name">
+  <input type="submit" value="投稿">
+</form>
+
+<%# 実際に投稿された内容を表示 %>
+<ul>
+  <% for (var i = 0; i < posts.length; i++) { %>
+    <li><%= posts[i] %></li>
+  <% } %>
+</ul>
+
+</body>
+</html>
